@@ -7,19 +7,19 @@ public class nextGreatestElement {
         int[] ans = new int[n];
         ans[n-1] = -1;
         // method-1 /Brute Force
-        for(int i=0; i<n-1; i++){
-            int mx = Integer.MIN_VALUE;
-            for(int j=i+1;j<n;j++){
-                mx = Math.max(mx,arr[j]);
-            }
-            ans[i] = mx;
-        }
-        //  method-2
-        // int nge = arr[n-1];
-        // for(int i=n-2;i>=0;i--){
-        //     ans[i] = nge;
-        //     nge = Math.max(nge,arr[i]);
+        // for(int i=0; i<n-1; i++){
+        //     int mx = Integer.MIN_VALUE;
+        //     for(int j=i+1;j<n;j++){
+        //         mx = Math.max(mx,arr[j]);
+        //     }
+        //     ans[i] = mx;
         // }
+            //method-2
+        int nge = arr[n-1];
+        for(int i=n-2;i>=0;i--){
+            ans[i] = nge;
+            nge = Math.max(nge,arr[i]);
+        }
         for(int ele : arr){
             System.out.print(ele+" ");
         }
