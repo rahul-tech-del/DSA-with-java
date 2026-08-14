@@ -7,7 +7,11 @@ public class outputUsingNestedLoop {
        Scanner sc = new Scanner(System.in);
         System.out.println("Enter input");
         int[][] arr = new int[3][3];
-        int n = arr.length;
+
+        int m = arr.length;
+        int n = arr[0].length;
+        //System.out.println(m);
+        //System.out.println(n);
 
         // Input of 2D array
         for(int i=0;i<3;i++){
