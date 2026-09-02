@@ -15,7 +15,8 @@ public class ArrayListsTwoD {
         l.add(a); l.add(b); l.add(c); l.add(d);
 
         for(int i=0; i<l.size(); i++){
-            for(int j=0; j<l.get(i).size();j++){
+            List<Integer> x = l.get(i);
+            for(int j=0; j<x.size();j++){
                 System.out.print(l.get(i).get(j)+" ");
             }
             System.out.println();
