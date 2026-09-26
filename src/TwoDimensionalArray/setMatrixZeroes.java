@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class setMatrixZeroes {
     public static void main(String[] args) {
-           Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         // Rows and columns input
         System.out.print("Enter rows: ");
