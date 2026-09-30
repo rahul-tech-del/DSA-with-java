@@ -1,7 +1,7 @@
 package strings;
 
 public class whyStrings {
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         char[] arr  = {'r','a','h','u','l'};
  
         // Method-1
