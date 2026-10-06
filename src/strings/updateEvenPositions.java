@@ -14,6 +14,6 @@ public class updateEvenPositions {
             }
         }
         s = str;
-        System.out.println(s);
+        System.out.println();
     }
 }
